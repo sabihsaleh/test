@@ -2,7 +2,7 @@ resource "azurerm_resource_group" "example" {
   name     = "example-resources"
   location = "West Europe"
 tags = {
-    environment = "dev"
+    Environment = "dev"
   }
 }
 
@@ -14,7 +14,7 @@ resource "azurerm_storage_account" "example" {
   account_replication_type = "GRS"
 
   tags = {
-    environment = "dev"
+    Environment = "dev"
   }
 }
 
@@ -25,6 +25,6 @@ resource "azurerm_app_service_plan" "example" {
 
   sku {
     tier = "Standard"
-    size = "S1"
+    size = "P0v3"
   }
 }
