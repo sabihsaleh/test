@@ -27,4 +27,8 @@ resource "azurerm_app_service_plan" "example" {
     tier = "Standard"
     size = "P0v3"
   }
+
+tags = {
+    environment = "dev"
+  }
 }
