@@ -1,6 +1,9 @@
 resource "azurerm_resource_group" "example" {
   name     = "example-resources"
   location = "West Europe"
+tags = {
+    environment = "dev"
+  }
 }
 
 resource "azurerm_storage_account" "example" {
